@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js variable declaration</title>
+</head>
+<body>
+    <script>
+        //variable declaration using var
+        var name="vivek"; //global
+        document.write(name);
+        console.log(name);
+
+        var name="rahul"; //redeclare and reassign
+        console.log(name);
+
+        function demo(){
+            var msg="hello world";
+            console.log(msg);
+        }
+        demo()
+
+        //variable declaration using let and const
+        let Number=798550039;
+        console.log(Number);
+        
+        Number=8967436905; // no redeclare but reassign
+        console.log(Number);
+
+        const email="mauryav12698@gmail.com";
+        console.log(email);
+        //no redeclare and no reassign possible
+        console.log(email);
+
+        //variable declaration
+        //difference b/w var, let and const
+    </script>
+</body>
+</html>
