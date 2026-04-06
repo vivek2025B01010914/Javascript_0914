@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops and strings</title>
+</head>
+<body>
+    <script>
+        //for-of loop
+let string1="vivek maurya";
+let size=0;
+for(let val of string1){
+    console.log(val);
+    size++;
+}
+console.log(size)
+
+//for-in loop are for objects
+const student={
+    name:"vivek maurya",
+    age:10,
+    cgpa:9.0,
+    isPass:true,
+};
+for(let i in student){
+    console.log(i,"==",student[i])
+}
+
+
+// let target;
+let n=5;
+do{
+    target=prompt("Guess Number");
+    if(target==n){
+        console.log("right!");
+    }
+}while(target!=n);
+
+//questions
+let myName=prompt("Enter your full Name:");
+let str=myName;
+let username=str.concat(str.length);
+console.log("@" + username  );
+
+
+
+
+    </script>
+</body>
+</html>
