@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Values Types in JS</title>
+</head>
+<body>
+    <script>
+        // JS data value types
+        //primitive
+        //string ,number,boolean,undefined,null,BigInt and symbol
+
+        //string
+        var Name="Vivek Maurya";
+        console.log(Name);
+        //number
+        var Mob=7985007044;
+        console.log(Mob);
+        //Boolean
+        var isMarried=false;
+        console.log(Name + " is married ? "+isMarried);
+        //undefined
+        var Email;
+        console.log(Email);
+        console.log(typeof(Email));
+        //null
+        var myAddress=null;
+        console.log(myAddress);
+        console.log(typeof(myAddress));
+        //BigInt
+        var myNum=BigInt(985735675753563);
+        console.log(myNum);
+        console.log(typeof(myNum));
+        //Symbol
+        var var1=Symbol("vivek");
+        var var2=Symbol("vivek");
+        console.log(var1==var2);
+
+        //Reference types
+        //objects,functions and arrays
+        let myInfo={
+            name:"vivek",
+            age:20,
+            isMarried:false,
+            address:"Delhi-25",
+            branch:"CSE",
+            section:23,
+        };
+        console.log(myInfo);
+        console.log(myInfo.name +" and his age is "+myInfo.age + " live in " + myInfo.address);
+
+        //length
+        var keys=Object.keys(myInfo);
+        console.log(keys.length);
+
+        //functions
+        function cal(){
+            var n1=48;
+            var n2=50;
+            var n3=78.5;
+            var add=n1+n2+n3;
+            console.log("sum of three numbers= "+ add);
+        }
+        cal();
+
+        //arrrays
+        let studentList=["Ram","Shayam","Pawan","Kiran","Angel"];
+        console.log(studentList[3]);
+        //different type of data
+        let student1=["Vijay",23,false,"Noida","CSE",null,18];
+        console.log(student1);
+        console.log(student1.length);
+
+        //to iterate array member
+        for(let i=0;i<student1.length;i++){
+            console.log(student1[i]);
+        }
+        for(let x in student1){
+            console.log("new way "+student1[x]);
+        }
+    </script>
+</body>
+</html>
