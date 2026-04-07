@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays in JS</title>
+</head>
+<body>
+    <script>
+        //array is a data stucture for collection of any data types
+        let num=[3,5,16,16,8,9,11,15,16,20,66]
+        
+        //lastIndexOf returns the index of the last occurance of specified value
+        console.log(num.lastIndexOf(16));
+
+        console.log("length is "+num.length);
+        //remove last element from array
+        console.log(num.pop());
+        console.log("updated array "+ num);
+        //add element in the last of array
+        console.log(num.push(88));
+        console.log("updated array after push "+num);
+
+        //shift: remove first element
+        console.log(num.shift());
+        console.log("updation after shift "+num);
+
+        //unshift: add elements in the begining
+        console.log(num.unshift(1));
+        console.log("updation after unshift "+ num);
+         
+        //slice:return a copy of subset of array
+        console.log(num.slice(3,6));
+        //splice: to replace or delete elements in array
+        console.log(num.splice(4,2,3,10));
+        console.log(num);
+    </script>
+</body>
+</html>
